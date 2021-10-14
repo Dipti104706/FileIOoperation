@@ -42,5 +42,29 @@ namespace FileIOoperation.FileIO
                 Console.WriteLine(ex.Message);
             }
         }
+
+        //Method to read all texts from the file
+        public void ReadAllTextInFile()
+        {
+            try
+            {
+                string text;
+                string path = @"H:\visualstudio\FileIOoperation\FileIOoperation\FileIO\Sample.txt";
+                //Read all lines in a file at once
+                text = File.ReadAllText(path);
+                if (text.Length != 0)
+                {
+                    Console.WriteLine(text);
+                }
+                else
+                {
+                    Console.WriteLine("File does not contain any text");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }

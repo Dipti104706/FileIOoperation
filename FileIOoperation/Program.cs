@@ -11,7 +11,7 @@ namespace FileIOoperation
             string path = @"H:\visualstudio\FileIOoperation\FileIOoperation\FileIO\Sample.txt";
             FileReadWriteOperation file = new FileReadWriteOperation();
             file.FilExists(path);
-            file.ReadAllLinesInFile();
+            file.ReadAllTextInFile();
             Console.ReadLine();
         }
     }
