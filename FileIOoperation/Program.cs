@@ -8,10 +8,9 @@ namespace FileIOoperation
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to File IO Operations");
-            string path = @"H:\visualstudio\FileIOoperation\FileIOoperation\FileIO\Sample.txt";
+            //string path = @"H:\visualstudio\FileIOoperation\FileIOoperation\FileIO\Sample.txt";
             FileReadWriteOperation file = new FileReadWriteOperation();
-            file.FilExists(path);
-            file.CopyMethod(path);
+            file.DeleteFile();
             Console.ReadLine();
         }
     }

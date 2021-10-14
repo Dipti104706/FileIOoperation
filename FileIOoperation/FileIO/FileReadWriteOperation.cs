@@ -82,5 +82,27 @@ namespace FileIOoperation.FileIO
                 Console.WriteLine(ex.Message);
             }
         }
+
+        // Delete file -To check whether the file exists or not,If delete the particular file
+        public void DeleteFile()
+        {
+            try
+            {
+                string deleteFile = @"H:\visualstudio\FileIOoperation\FileIOoperation\FileIO\Sample1.txt";
+                if (FilExists(deleteFile))
+                {
+                    File.Delete(deleteFile);
+                    Console.WriteLine("File deleted");
+                }
+                else
+                {
+                    Console.WriteLine("File not found!!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }
