@@ -10,7 +10,7 @@ namespace FileIOoperation
             Console.WriteLine("Welcome to File IO Operations");
             //string path = @"H:\visualstudio\FileIOoperation\FileIOoperation\FileIO\Sample.txt";
             FileReadWriteOperation file = new FileReadWriteOperation();
-            file.DeleteFile();
+            file.ReadFromStreamReader();
             Console.ReadLine();
         }
     }

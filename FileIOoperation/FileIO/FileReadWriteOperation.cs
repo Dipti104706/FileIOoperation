@@ -104,5 +104,29 @@ namespace FileIOoperation.FileIO
                 Console.WriteLine(ex.Message);
             }
         }
+
+        // Read from stream reader class-reads a file content one line at a time and displayed it.
+        public void ReadFromStreamReader()
+        {
+            string streamRead = @"H:\visualstudio\FileIOoperation\FileIOoperation\FileIO\Sample.txt";
+            try
+            {
+                //using keyword is for directing object to garbage collection
+                using (StreamReader reader = new StreamReader(streamRead))
+                {
+                    string line;
+                    Console.WriteLine("Read the file from stream reader class");
+                    while ((line = reader.ReadLine()) != null)
+                    {
+
+                        Console.WriteLine(line);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }
